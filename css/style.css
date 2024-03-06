@@ -1,0 +1,378 @@
+*{
+    list-style: none;
+    text-decoration: none;
+    font-family: "Google Sans Regular";
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+body{
+    background: rgb(255, 255, 255);
+}
+
+.header-nav{
+    background-image: linear-gradient(135deg, rgba(0,0,0,0.626)0%, rgba(61,58,58,0.575)100%), url(../img/gloria.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: fixed;
+    width: 100%;
+    height: 25cm;
+    position: relative;
+}
+
+header{
+    width: 100%;
+    height: 80px;
+    background: rgba(93, 93, 98, 0.386);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 100px;
+}
+
+header .logo{
+    font-size: 28px;
+    font-weight: bold;
+    color: white;
+    font-family: "Kode Mono", monospace;
+    font-size: 32px;
+}
+
+header .hamburger{
+    display: none;
+}
+
+header nav {
+    flex-grow: 1; /* Para que ocupe todo el espacio restante */
+    text-align: center; /* Para centrar horizontalmente las opciones */
+}
+
+header .nav-bar ul {
+    display: inline-block; /* Para que las opciones se muestren en línea */
+    padding: 0; /* Eliminar el espacio de relleno predeterminado */
+}
+
+header .nav-bar ul li {
+    display: inline-block; 
+}
+
+header .nav-bar ul li a {
+    display: block;
+    color: white;
+    font-size: 20px;
+    padding: 10px 25px;
+    border-radius: 50px;
+    transition: 0.2s;
+    margin: 0 5px;
+    font-family: "Kanit", sans-serif;
+    font-size: 23px;
+}
+
+header .nav-bar ul li a:hover {
+    color: black;
+    background: white;
+}
+
+header .nav-bar ul li a.activate {
+    color: black;
+    background: white;
+}
+
+.word-motivation {
+    position: absolute; /* Posicionamiento absoluto */
+    top: 0; /* Coloca el elemento en la parte superior */
+    left: 0; /* Coloca el elemento en la esquina izquierda */
+    z-index: 2; /* Asegura que esté encima de .header-nav */
+    text-align: center;
+    width: 100%;
+    color: white;
+    margin-top: 15%;
+    
+}
+
+
+.word-motivation h1{
+    font-family: "Kanit", sans-serif;
+}
+
+
+/*contenedor body*/
+.body-artist-back {
+    background-color: #373737;
+    opacity: 0;
+    transition: opacity 2s ease;
+    transform: translateY(20px);
+}
+
+.body-artist-back.appear {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.body-artist {
+    display: flex;
+    justify-content: center;
+    flex-direction: wrap;
+}
+
+.body-artist .artists {
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+    margin: 20px;
+    text-align: center;
+    border: 1px solid rgb(174, 174, 174);
+}
+
+.body-artist .artists img {
+    width: 100%;
+    height: 12cm;
+}
+
+.body-artist .artists h3 {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.content-body h1{
+    margin-top: 2%;
+    color: rgb(0, 0, 0);
+    margin-left: 5%;
+    font-family: "Kanit", sans-serif;
+    font-size: 30px;
+}
+
+.content-body p{
+    margin-top: 1%;
+    color: rgb(0, 0, 0);
+    margin-left: 6%;
+    font-family: "Kanit", sans-serif;
+    font-size: 20px;
+    text-align: justify;
+    width: 85%;
+}
+
+.content-body .info-image{
+    display: flex;
+    justify-content: center;
+    margin-top: 2%;
+}
+
+.content-body .info-image img{
+    width: 40%;
+    border-radius: 50px;
+    box-shadow: 0px 8px 12px -2px black;
+}
+
+.content-body .content-body-progress h3{
+    margin-left: 6%;
+    margin-top: 2%;
+    font-family: "Kanit", sans-serif;
+    font-size: 17px;
+}
+
+.content-body .content-body-progress ul{
+    margin-left: 7%;
+    margin-top: 1%;
+    list-style-type: disc;
+}
+
+.content-body .content-body-progress li{
+    font-family: "Kanit", sans-serif;
+}
+
+.content-body .content-body-progress .content-body-table{
+    display: flex;
+    justify-content: center;
+    margin-top: 2%;
+}
+
+.content-body .content-body-progress .content-body-table .center-content{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 50%;
+}
+
+.content-body .content-body-progress .content-body-table .center-content table th,td{
+    padding: 5px 5px 5px 5px;
+    border: solid gray;
+}
+
+.content-body .content-body-progress .content-body-table p,table{
+    text-align: center;
+    
+}
+
+footer{    
+    background: black;
+}
+
+footer .foot-data{
+    margin-top: 3%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    color: white;
+}
+
+footer .foot-data .foot{
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+    margin: 20px;
+    text-align: center;
+    text-align: center;
+}
+
+footer .foot-data .foot h1,h3{
+    font-family: "Kode Mono", monospace;
+}
+
+footer .foot-data .foot a{
+    margin: 13px;
+}
+
+footer .foot-data .foot a i{
+    font-size: 30px;
+    color: white;
+}
+
+footer .copyright{
+    color: white;
+    text-align: center;
+}
+
+footer .copyright p{
+    font-size: 25px;
+    padding: 5px 5px 5px 5px;
+    font-family: "Kanit", sans-serif;
+}
+
+@media only screen and (max-width:1320px){
+    header{
+        padding: 0 50px;
+        z-index: 2;
+    }
+}
+
+@media only screen and (max-width:1110px){
+    header{
+        padding: 0 30px;
+        z-index: 2;
+    }
+}
+
+@media only screen and (max-width:900px){
+    .header-nav header{
+        z-index: 4;
+    }
+
+    .header-nav{
+        background-image: linear-gradient(135deg, rgba(0,0,0,0.626)0%, rgba(61,58,58,0.575)100%), url(../img/gloria.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        background-position: center center;
+        width: 100%;
+        height: 20cm;
+        position: relative;
+    }
+
+    header .hamburger{
+        display: block;
+        cursor: pointer;
+        z-index: 4;
+    }
+
+    header .hamburger .line{
+        width: 30px;
+        height: 3px;
+        background: white;
+        margin: 6px 0;
+        z-index: 4;
+    }
+
+    header .nav-bar{
+        height: 0;  
+        position: absolute;
+        top: 80px;
+        left: 0;
+        right: 0;
+        width: 100vw;
+        background: rgba(35, 35, 35, 0.92);
+        transition: 0.5s;
+        overflow: hidden;
+        z-index: 4;
+    }
+
+    header .nav-bar.activate{
+        height: 450px;
+        z-index: 4;
+    }
+
+    header .nav-bar ul{
+        display: block;
+        width: fit-content;
+        margin: 80px auto 0 auto;
+        text-align: center;
+        transition: 0.5s;
+        display: flex;
+        flex-direction: column;
+        z-index: 4;
+    }   
+
+    header .nav-bar ul li a{
+        margin-bottom: 12px;
+    }
+
+    .body-artist-back .body-artist{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .word-motivation{
+        margin-top: 50%;
+        z-index: 1;
+    }
+
+    .body-artist-back .body-artist .artists{
+        width: 90%;
+    }
+
+    .body-artist-back .body-artist .artists img{
+        width: 100%;
+        height: 8cm;
+
+    }
+
+    .content-body .info-image{
+        margin-top: 5%;
+    }
+
+    .content-body .info-image img{
+        width: 90%;
+    }
+
+    .content-body .content-body-progress{
+        margin-top: 5%;
+    }
+
+    .content-body .content-body-table{
+        width: 100%;
+    }
+
+    .content-body .content-body-table .center-content{
+        margin-top: 15%;
+        width: 100%;
+        margin-right: 10%;
+    }
+
+    .content-body .content-body-table .center-content p{
+        width: 100%;
+        font-size: 15px;
+        text-align: justify;
+    }
+}   
